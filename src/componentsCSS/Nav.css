@@ -1,0 +1,19 @@
+.header{
+   position: fixed;
+   width: 100%;
+   
+}
+nav.nav.false.navbar.navbar-expand-lg.navbar-light {
+    transition: 3s;
+}
+.nav_bg{
+   background: #111111;
+   transition: 2s;
+}
+.right-avatar{
+   width: 40px;
+}
+
+.mr-auto.navbar-nav {
+    margin-bottom: 3px;
+}
