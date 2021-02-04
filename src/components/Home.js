@@ -3,6 +3,7 @@ import Nav from './Nav'
 import Banner from './Banner'
 import Row from './Row'
 import request from '../Request'
+import Footer from './Footer'
 const Home = () => {
    return (
       <div>
@@ -16,6 +17,7 @@ const Home = () => {
          <Row title='Horrom Movies' fetchUrl={request.fetchHorrorMovies}></Row>
          <Row title='Romactic Movie' fetchUrl={request.fetchRomanticMovies}></Row>
          <Row title='Coumentaries' fetchUrl={request.fetchDocumertaries}></Row>
+         <Footer></Footer>
       </div>
    )
 }
