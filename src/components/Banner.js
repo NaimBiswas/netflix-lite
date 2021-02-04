@@ -30,7 +30,7 @@ const Banner = () => {
             backgroundSize: 'cover',
             backgroundPosition: 'top center',
             height: '420px',
-            backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, 1)),url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
+            backgroundImage: `linear-gradient(0deg, rgb(197 25 25 / 30%), rgb(0 0 0)),url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
             position: 'relative'
          }} className="banner">
 
@@ -38,7 +38,7 @@ const Banner = () => {
             <div className="banner_content">
                <h2 className='text-white movie-name'>{movie?.name || movie?.title || movie?.original_name}</h2>
                <div className="banner_button mt-1">
-                  <Button variant='custom-button'>Play</Button>
+                  <Button variant='custom-button'>Play Now</Button>
                   <Button variant='custom-button'>My List</Button>
                </div>
                <div className="banger_discription">

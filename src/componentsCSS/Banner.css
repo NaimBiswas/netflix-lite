@@ -1,3 +1,13 @@
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: #E50914;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: red;
+}
+
 .banner_content{
     position: absolute;
     top: 35%;
@@ -12,7 +22,7 @@ button.btn.btn-custom-button {
     padding-left: 30px;
     padding-right: 30px;
     color: #fff;
-    font-weight: 700;
+    font-weight: 500;
     margin-right: 15px;
     border-radius: none;
     transition: 700ms;
