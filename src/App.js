@@ -15,7 +15,7 @@ function App() {
             {/* baner  */}
             <Banner></Banner>
             {/* Home  */}
-            <Row title='Treanding Now' fetchUrl={request.fetchTrending}></Row>
+            <Row title='Treanding Now' fetchUrl={request.fetchTrending} isLargeRow></Row>
             <Row title='Top Rated Movies' fetchUrl={request.fetchTopRated}></Row>
             <Row title='Action Movies' fetchUrl={request.fetchActionMovies}></Row>
             <Row title='Comedy Movies' fetchUrl={request.fetchComedyMovies}></Row>
