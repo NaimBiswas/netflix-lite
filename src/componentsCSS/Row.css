@@ -16,9 +16,7 @@
    max-height: 300px;
    margin-right: 10px;
    object-fit: contain;
-   transition: 700ms;
-  
-   
+  transition: 700ms;  
 }
 .row_poster:hover{
        transform: rotate(360deg);
