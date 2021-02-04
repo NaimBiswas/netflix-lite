@@ -14,7 +14,6 @@ function Row({ title, fetchUrl, isLargeRow = false }) {
       fetchData();
    }, [fetchUrl]);
    const base_url = `https://image.tmdb.org/t/p/original`
-   console.log(movies);
    return (
       <Fragment>
          <div className="Row">
