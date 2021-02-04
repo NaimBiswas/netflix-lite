@@ -25,15 +25,15 @@ const NavMenu = () => {
                <Navbar.Toggle aria-controls="basic-navbar-nav" />
                <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="mr-auto">
-                     <Nav.Link className='text-white' href="#home">Home</Nav.Link>
-                     <Nav.Link className='text-white' href="#link">Tv Shows</Nav.Link>
-                     <Nav.Link className=' text-white' href="#link">Movies</Nav.Link>
-                     <Nav.Link className='text-white' href="#link">Recently Added</Nav.Link>
-                     <Nav.Link className='text-white' href="#link">My List</Nav.Link>
+                     <Nav.Link className=' nav-color' href="#home">Home</Nav.Link>
+                     <Nav.Link className='nav-color' href="#link">Tv Shows</Nav.Link>
+                     <Nav.Link className=' nav-color' href="#link">Movies</Nav.Link>
+                     <Nav.Link className='nav-color' href="#link">Recently Added</Nav.Link>
+                     <Nav.Link className='nav-color' href="#link">My List</Nav.Link>
                   </Nav>
                   <Nav>
-                     <Nav.Link className='text-white'> KID</Nav.Link>
-                     <Nav.Link className='text-white'> DVD</Nav.Link>
+                     <Nav.Link className='nav-color'> KID</Nav.Link>
+                     <Nav.Link className='nav-color'> DVD</Nav.Link>
                      <img className='right-avatar' src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="" />
                   </Nav>
                </Navbar.Collapse>

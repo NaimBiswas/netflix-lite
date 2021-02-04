@@ -4,6 +4,10 @@
    z-index: 100;
    
 }
+.nav-color {
+    color: rgb(255 255 255 / 81%)!important;
+    /* font-size: 18px; */
+}
 nav.nav.false.navbar.navbar-expand-lg.navbar-light {
     transition: 3s;
 }
@@ -16,5 +20,5 @@ nav.nav.false.navbar.navbar-expand-lg.navbar-light {
 }
 
 .mr-auto.navbar-nav {
-    margin-bottom: 3px;
+    margin-bottom: 2px;
 }
