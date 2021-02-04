@@ -37,7 +37,7 @@ const Banner = () => {
             {/* Bannger Ttilte  */}
             <div className="banner_content">
                <h2 className='text-white movie-name'>{movie?.name || movie?.title || movie?.original_name}</h2>
-               <div className="banner_button mt-1">
+               <div className="banner_button mt-2">
                   <Button variant='custom-button'> Play Now </Button>
                   <Button variant='custom-button'>My List</Button>
                </div>
