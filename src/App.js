@@ -13,7 +13,6 @@ function App() {
    return (
       <Fragment>
          <div className="App">
-
             <Router>
                <Route exact path='/' component={Home} ></Route>
                <Route path='/movies' component={Movies}></Route>
@@ -23,7 +22,6 @@ function App() {
             </Router>
          </div>
       </Fragment>
-
    );
 }
 

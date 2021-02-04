@@ -2,6 +2,7 @@ import React from 'react'
 import { Fragment } from 'react'
 import request from '../Request'
 import Banner from './Banner'
+import Footer from './Footer'
 import MoviesBannger from './MoviesBanner'
 import Nav from './Nav'
 import Row from './Row'
@@ -18,6 +19,7 @@ const RecentlyAdded = () => {
          <Row title='Horrom Movies' fetchUrl={request.fetchHorrorMovies}></Row>
          <Row title='Romactic Movie' fetchUrl={request.fetchRomanticMovies}></Row>
          <Row title='Coumentaries' fetchUrl={request.fetchDocumertaries}></Row>
+         <Footer></Footer>
       </div>
    )
 }

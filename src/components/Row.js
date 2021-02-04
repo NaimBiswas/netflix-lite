@@ -18,7 +18,7 @@ function Row({ title, fetchUrl, isLargeRow = false }) {
    return (
       <Fragment>
          <div className="Row">
-            <h2 className='text-white'>{title}</h2>
+            <h2 className='' style={{ color: '#E50914' }}>{title}</h2>
             <div className="row_posters">
                {
                   movies.map((move) => [

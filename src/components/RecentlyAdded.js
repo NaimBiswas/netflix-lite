@@ -1,5 +1,6 @@
 import React from 'react'
 import request from '../Request'
+import Footer from './Footer'
 import Nav from './Nav'
 import RecentlyAddedBannger from './RecentlyAddedBanner'
 import Row from './Row'
@@ -17,6 +18,7 @@ const RecentlyAdded = () => {
          <Row title='Horrom Movies' fetchUrl={request.fetchHorrorMovies}></Row>
          <Row title='Romactic Movie' fetchUrl={request.fetchRomanticMovies}></Row>
          <Row title='Coumentaries' fetchUrl={request.fetchDocumertaries}></Row>
+         <Footer></Footer>
       </div>
    )
 }
