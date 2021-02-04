@@ -10,4 +10,5 @@ const request = {
    fetchHorrorMovies: `/disconver/movie?api_key=${API_KEY}&with_genres=27`,
    fetchRomanticMovies: `/disconver/movie?api_key=${API_KEY}&with_genres=10749`,
    fetchDocumertaries: `/disconver/movie?api_key=${API_KEY}&with_genres=99`,
-}
+};
+export default request;
