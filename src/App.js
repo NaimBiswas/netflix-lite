@@ -7,6 +7,7 @@ import Movies from './components/Movies';
 import TvShows from './components/TvShows';
 import RecentlryAdded from './components/RecentlyAdded';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
+import MyList from './components/MyList';
 
 function App() {
    return (
@@ -16,8 +17,9 @@ function App() {
             <Router>
                <Route exact path='/' component={Home} ></Route>
                <Route path='/movies' component={Movies}></Route>
-               <Route path='/javscript:avoid(0)' component={TvShows}></Route>
+               <Route path='/tv-shows' component={TvShows}></Route>
                <Route path='/recently-added' component={RecentlryAdded}></Route>
+               <Route path='/my-list' component={MyList}></Route>
             </Router>
          </div>
       </Fragment>

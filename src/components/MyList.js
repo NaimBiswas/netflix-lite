@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from './Nav'
 
-const RecentlyAdded = () => {
+const MyList = () => {
    return (
       <div>
          <Nav></Nav>
@@ -13,4 +13,4 @@ const RecentlyAdded = () => {
 
 }
 
-export default RecentlyAdded
+export default MyList

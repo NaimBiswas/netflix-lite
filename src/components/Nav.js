@@ -27,7 +27,7 @@ const NavMenu = () => {
                <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="mr-auto">
                      <Nav.Link className=' nav-color' ><Link className='nav-link nav-color' to='/'>Home</Link> </Nav.Link>
-                     <Nav.Link className='nav-color' ><Link className='nav-link nav-color' to='javscript:avoid(0)'>Tv Shows</Link></Nav.Link>
+                     <Nav.Link className='nav-color' ><Link className='nav-link nav-color' to='/tv-shows'>Tv Shows</Link></Nav.Link>
                      <Nav.Link className=' nav-color' ><Link className='nav-link nav-color' to='/movies'>Movies</Link></Nav.Link>
                      <Nav.Link className='nav-color' ><Link className='nav-link nav-color' to='/recently-added'>Recently Added</Link></Nav.Link>
                      <Nav.Link className='nav-color' ><Link className='nav-link nav-color' to='/my-list'>My List</Link></Nav.Link>
