@@ -1,6 +1,7 @@
 .header{
    position: fixed;
    width: 100%;
+   z-index: 100;
    
 }
 nav.nav.false.navbar.navbar-expand-lg.navbar-light {

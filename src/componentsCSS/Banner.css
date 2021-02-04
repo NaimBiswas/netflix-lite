@@ -1,0 +1,30 @@
+.banner_content{
+    position: absolute;
+    top: 30%;
+    padding-left: 140px;
+}
+.movie-name{
+   font-size: 40px;
+    font-weight: 600;
+}
+button.btn.btn-custom-button {
+    border: 1.5px solid #E50914;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #fff;
+    font-weight: 700;
+    margin-right: 15px;
+    border-radius: none;
+    transition: 700ms;
+    background: #00000096;
+}
+button.btn.btn-custom-button:hover{
+   background: #E50914;
+   transition: 700ms;
+   border: 1.5px solid #E50914;
+   color: #111111;
+}
+.banger_discription{
+   width: 50%;
+   text-align: justify;
+}
