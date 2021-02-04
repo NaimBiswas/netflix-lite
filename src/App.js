@@ -2,7 +2,10 @@ import { Fragment } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home';
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+import Movies from './components/Movies';
+import TvShows from './components/TvShows';
+import RecentlryAdded from './components/RecentlyAdded';
+import { Route, BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
    return (
@@ -10,6 +13,9 @@ function App() {
          <div className="App">
             <Router>
                <Route exact path='/' component={Home} ></Route>
+               <Route path='/movies' component={Movies}></Route>
+               <Route path='/tv-shows' component={TvShows}></Route>
+               <Route path='/recently-added' component={RecentlryAdded}></Route>
 
             </Router>
 
