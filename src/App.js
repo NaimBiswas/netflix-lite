@@ -15,6 +15,7 @@ function App() {
             {/* baner  */}
             <Banner></Banner>
             {/* Home  */}
+            <Row title='Netflix Trending' fetchUrl={request.fetchNetflixOrginals} isLargeRow></Row>
             <Row title='Treanding Now' fetchUrl={request.fetchTrending} isLargeRow></Row>
             <Row title='Top Rated Movies' fetchUrl={request.fetchTopRated}></Row>
             <Row title='Action Movies' fetchUrl={request.fetchActionMovies}></Row>

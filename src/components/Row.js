@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import { Fragment } from 'react'
 import axios from '../axios'
-
+import '../componentsCSS/Row.css'
 function Row({ title, fetchUrl, isLargeRow = false }) {
    const [movies, setMovie] = useState([]);
    useEffect(() => {
@@ -19,13 +19,14 @@ function Row({ title, fetchUrl, isLargeRow = false }) {
       <Fragment>
          <div className="Row">
             <h2 className='text-white'>{title}</h2>
-
-            {
-               movies.map((move) => [
-                  <img style={{ width: '100%' }} src={`${base_url}${isLargeRow ? move.poster_path : move.backdrop_path
-                     }`} alt={movies.name} />
-               ])
-            }
+            <div className="row_posters">
+               {
+                  movies.map((move) => [
+                     <img className={`row_poster ${isLargeRow && "row_posterLarge"}`} src={`${base_url}${isLargeRow ? move.poster_path : move.backdrop_path
+                        }`} alt={movies.name} />
+                  ])
+               }
+            </div>
 
          </div>
       </Fragment >
