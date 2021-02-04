@@ -1,9 +1,26 @@
-import React from 'react'
+import axios from '../axios'
+import React, { useEffect, useState } from 'react'
 import { Fragment } from 'react'
 import { Button } from 'react-bootstrap'
 import '../componentsCSS/Banner.css'
+import request from '../Request'
 
 const Banner = () => {
+   const [movie, setMovie] = useState([]);
+   useEffect(() => {
+      async function fetchData() {
+         const Request = await axios.get(request.fetchNetflixOrginals);
+         setMovie(
+            Request.data.results[
+            Math.floor(Math.random() * Request.data.results.length - 1)
+            ],
+         );
+         return Request;
+      };
+      fetchData()
+
+   }, [])
+
    function truncate(string, n) {
       return string.length > n ? string.substr(0, n - 1) + '...' : string;
    }
@@ -18,14 +35,14 @@ const Banner = () => {
 
             {/* Bannger Ttilte  */}
             <div className="banner_content">
-               <h2 className='text-white movie-name'>This is Your Movie Title </h2>
+               <h2 className='text-white movie-name'>{movie.name}</h2>
                <div className="banner_button mt-1">
                   <Button variant='custom-button'>Play</Button>
                   <Button variant='custom-button'>My List</Button>
                </div>
                <div className="banger_discription">
                   <p className='text-white mt-2'>
-                     {truncate('Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum reiciendis ex dolores laudantium unde autem error cupiditate debitis placeat id. Laboriosam fugit nesciunt error perspiciatis, aliquid voluptate? Aliquam, commodi cum.', 220)}
+                     {truncate(movie.overview, 220)}
                   </p>
                </div>
             </div>
