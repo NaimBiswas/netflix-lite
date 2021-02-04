@@ -19,30 +19,31 @@ const Banner = () => {
       };
       fetchData()
 
-   }, [])
+   }, []);
 
    function truncate(string, n) {
-      return string.length > n ? string.substr(0, n - 1) + '...' : string;
+      return string?.length > n ? string.substr(0, n - 1) + '...' : string;
    }
    return (
       <Fragment>
          <div style={{
             backgroundSize: 'cover',
-            height: '400px',
-            backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),url("https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/653cx-EWNZ395Y1HZ-Full-Image_GalleryBackground-en-US-1594143812826._SX1080_.jpg")`,
+            backgroundPosition: 'top center',
+            height: '420px',
+            backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, 1)),url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
             position: 'relative'
          }} className="banner">
 
             {/* Bannger Ttilte  */}
             <div className="banner_content">
-               <h2 className='text-white movie-name'>{movie.name}</h2>
+               <h2 className='text-white movie-name'>{movie?.name || movie?.title || movie?.original_name}</h2>
                <div className="banner_button mt-1">
                   <Button variant='custom-button'>Play</Button>
                   <Button variant='custom-button'>My List</Button>
                </div>
                <div className="banger_discription">
                   <p className='text-white mt-2'>
-                     {truncate(movie.overview, 220)}
+                     {truncate(movie?.overview, 220)}
                   </p>
                </div>
             </div>
