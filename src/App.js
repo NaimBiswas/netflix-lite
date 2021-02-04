@@ -2,6 +2,7 @@ import { Fragment } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home';
+import Nav from './components/Nav';
 import Movies from './components/Movies';
 import TvShows from './components/TvShows';
 import RecentlryAdded from './components/RecentlyAdded';
@@ -11,15 +12,13 @@ function App() {
    return (
       <Fragment>
          <div className="App">
+
             <Router>
                <Route exact path='/' component={Home} ></Route>
                <Route path='/movies' component={Movies}></Route>
-               <Route path='/tv-shows' component={TvShows}></Route>
+               <Route path='/javscript:avoid(0)' component={TvShows}></Route>
                <Route path='/recently-added' component={RecentlryAdded}></Route>
-
             </Router>
-
-
          </div>
       </Fragment>
 

@@ -5,7 +5,7 @@ import { Button } from 'react-bootstrap'
 import '../componentsCSS/Banner.css'
 import request from '../Request'
 
-const Banner = () => {
+const RecentlyAddedBannger = () => {
    const [movie, setMovie] = useState([]);
    useEffect(() => {
       async function fetchData() {
@@ -36,9 +36,10 @@ const Banner = () => {
 
             {/* Bannger Ttilte  */}
             <div className="banner_content">
+               <h1 style={{ color: "#E50914", fontWeight: '800', fontSize: "40px" }}>ALL NEW MOVIES</h1>
                <h2 className='text-white movie-name'>{movie?.name || movie?.title || movie?.original_name}</h2>
                <div className="banner_button mt-1">
-                  <Button variant='custom-button'> Play Now </Button>
+                  <Button variant='custom-button'>Play Now</Button>
                   <Button variant='custom-button'>My List</Button>
                </div>
                <div className="banger_discription">
@@ -52,4 +53,4 @@ const Banner = () => {
    )
 }
 
-export default Banner
+export default RecentlyAddedBannger
