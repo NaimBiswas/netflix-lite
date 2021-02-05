@@ -100,7 +100,47 @@ const LandingPage = () => {
          <section className='mt-3'>
             <div className="container">
                <div className="row">
+                  <div className="col-lg-3">
+                     <ul>
+                        <li className='nav'><a className='nav-link nav-link-color' href="#">Questions? Contact us.</a></li>
 
+                        <li className='nav'><a className='nav-link nav-link-color' href="#">Center Center</a></li>
+                        <li className='nav'><a className='nav-link nav-link-color' href="#">Account</a></li>
+                        <li className='nav'><a className='nav-link nav-link-color' href="#"> Media</a></li>
+                        <li className='nav'><a className='nav-link nav-link-color' href="#">   Investor</a></li>
+                        <li className='nav'><a className='nav-link nav-link-color' href="#">Relations</a></li>
+                     </ul>
+                  </div>
+                  <div className="col-lg-3">
+                     <ul>
+                        <li className='nav'><a className='nav-link nav-link-color' href="#">  Netflix Originals</a></li>
+                        <li className='nav'><a className='nav-link nav-link-color' href="#">  Legal Notices</a></li>
+                        <li className='nav'><a className='nav-link nav-link-color' href="#">FAQ</a></li>
+                        <li className='nav'><a className='nav-link nav-link-color' href="#"> Netflix Bangladesh</a></li>
+                     </ul>
+                  </div>
+                  <div className="col-lg-3">
+                     <ul>
+
+                        <li className='nav'><a className='nav-link nav-link-color' href="#"> Cookie Preferences</a></li>
+                        <li className='nav'><a className='nav-link nav-link-color' href="#"> Corporate Information</a></li>
+                        <li className='nav'><a className='nav-link nav-link-color' href="#"> Contact Us</a></li>
+                        <li className='nav'><a className='nav-link nav-link-color' href="#"> Speed Test</a></li>
+                        <li className='nav'><a className='nav-link nav-link-color' href="#">Help</a></li>
+                     </ul>
+                  </div>
+                  <div className="col-lg-3">
+                     <ul>
+
+                        <li className='nav'><a className='nav-link nav-link-color' href="#">Jobs</a></li>
+                        <li className='nav'><a className='nav-link nav-link-color' href="#">Ways to Watch</a></li>
+                        <li className='nav'><a className='nav-link nav-link-color' href="#">Terms of Use</a></li>
+                        <li className='nav'><a className='nav-link nav-link-color' href="#"> Privacy</a></li>
+                        <li className='nav'><a className='nav-link nav-link-color' href="#">Help</a></li>
+
+
+                     </ul>
+                  </div>
 
 
                </div>
