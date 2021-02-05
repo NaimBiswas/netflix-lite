@@ -8,18 +8,20 @@ import TvShows from './components/TvShows';
 import RecentlryAdded from './components/RecentlyAdded';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import MyList from './components/MyList';
+import LandingNav from './components/LandingNav';
 
 function App() {
    return (
       <Fragment>
          <div className="App">
-            <Router>
+            <LandingNav></LandingNav>
+            {/* <Router>
                <Route exact path='/' component={Home} ></Route>
                <Route path='/movies' component={Movies}></Route>
                <Route path='/tv-shows' component={TvShows}></Route>
                <Route path='/recently-added' component={RecentlryAdded}></Route>
                <Route path='/my-list' component={MyList}></Route>
-            </Router>
+            </Router> */}
          </div>
       </Fragment>
    );
