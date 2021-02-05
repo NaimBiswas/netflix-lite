@@ -1,9 +1,10 @@
 import { Button } from 'react-bootstrap'
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import '../componentsCSS/LandingPageBanner.css'
+import { Link } from 'react-router-dom'
 const LandingPageBanner = () => {
 
-
+   const [singIn, setSingIn] = useState(false)
 
 
 
@@ -30,7 +31,7 @@ const LandingPageBanner = () => {
                </div>
                   <div className="search_bar">
                      <input type="text" placeholder='Email Address' />
-                     <Button className='Get_started'>GET STARTED</Button>
+                     <Button onClick={() => setSingIn(true)} className='Get_started'><Link className='nav-link text-white' to='/login'> GET STARTED </Link></Button>
                   </div>
                </div>
             </div>

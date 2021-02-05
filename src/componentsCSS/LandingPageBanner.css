@@ -37,13 +37,13 @@
     color: #202020;
 }
 button.Get_started {
-     background: #f40612db;
+        background: #f40612db;
     border: none;
     margin-bottom: 4px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 40px;
-    padding-right: 40px;
+    
+    padding-bottom: 3px;
+    padding-left: 35px;
+    padding-right: 34px;
     font-size: 23px;
     font-weight: 600;
 }

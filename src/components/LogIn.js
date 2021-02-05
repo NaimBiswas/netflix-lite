@@ -5,7 +5,7 @@ const LogIn = () => {
    return (
       <Fragment>
          <LandingNav></LandingNav>
-         Hi I am Landing Page
+         <h3 className='text-white'>This is login Scream</h3>
       </Fragment>
    )
 }

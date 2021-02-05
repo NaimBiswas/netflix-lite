@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import { Button, Nav, Navbar } from 'react-bootstrap'
 import Logo from '../Logo.svg'
 import '../componentsCSS/LandingNav.css'
@@ -6,6 +6,7 @@ import { Link, Route } from 'react-router-dom'
 
 
 const LandingNav = () => {
+   const [singIn, setSingIn] = useState(false)
    return (
       <Fragment>
          <div className="container_nav">
@@ -14,7 +15,7 @@ const LandingNav = () => {
                <Nav className="mr-auto">
                </Nav>
 
-               <Button className='Landing_button'><Link className='nav-link text-white signInLInk' to='/login'>Sing In </Link></Button>
+               <Button onClick={() => setSingIn(true)} className='Landing_button'><Link className='nav-link text-white signInLInk' to='/login'>Sing In </Link></Button>
 
             </Navbar>
          </div>
