@@ -1,0 +1,52 @@
+.middle_content {
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+
+.middle_content h2 {
+    width: 38%;
+    text-align: center;
+    margin: auto;
+    font-size: 3.125rem;
+    font-weight: 500;
+}.middle_content h3 {
+   
+    margin-top: 15px;
+    font-size: 1.625rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+
+}
+.seacrch-contect {
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+}
+.search_bar input {
+    width: 44%;
+    padding: 15px 0;
+    border: .5px solid #000000c4;
+    padding-left: 24px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #202020;
+}
+button.Get_started {
+     background: #f40612db;
+    border: none;
+    margin-bottom: 4px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 23px;
+    font-weight: 600;
+}
+button.Get_started:hover{
+   background-color: red;
+}
