@@ -8,7 +8,6 @@ const LogIn = () => {
       <Fragment>
          <LandingNav value={true}></LandingNav>
          <LandingPageBanner value={true}></LandingPageBanner>
-
       </Fragment>
    )
 }

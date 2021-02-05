@@ -12,6 +12,7 @@ import LandingNav from './components/LandingNav';
 import LandingPageBanner from './components/LandingPageBanner';
 import LandingPage from './components/LandingPage';
 import LogIn from './components/LogIn';
+import SingUp from './components/SingUp';
 
 function App() {
    const user = false;
@@ -25,7 +26,8 @@ function App() {
                   !user ? ([
                      <Route exact path='/' component={LandingPage} >
                      </Route>,
-                     <Route path='/login' component={LogIn}></Route>
+                     <Route path='/login' component={LogIn}></Route>,
+                     <Route path='/registration' component={SingUp}></Route>
 
                   ]) : ([
                      <Route exact path='/' component={Home} ></Route>,
