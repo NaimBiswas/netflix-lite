@@ -23,7 +23,8 @@ function App() {
 
                {
                   !user ? ([
-                     <Route exact path='/' component={LandingPage} ></Route>,
+                     <Route exact path='/' component={LandingPage} >
+                     </Route>,
                      <Route path='/login' component={LogIn}></Route>
 
                   ]) : ([

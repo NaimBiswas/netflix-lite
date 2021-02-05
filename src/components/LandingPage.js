@@ -1,12 +1,14 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import LandingNav from './LandingNav'
 import LandingPageBanner from './LandingPageBanner'
 import '../componentsCSS/LandingPage.css'
 
 const LandingPage = () => {
+   const [singIn, setsingIn] = useState(false)
    return (
       <Fragment>
          <LandingNav></LandingNav>
+
          <LandingPageBanner></LandingPageBanner>
 
          <section className='mt-3'>
