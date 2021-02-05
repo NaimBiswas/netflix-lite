@@ -5,7 +5,15 @@ import LandingNav from './LandingNav'
 
 
 const LogIn = () => {
-   const LogIn = false;
+   const register = e => {
+
+   }
+
+   const signIn = (Event) => {
+
+      Event.preventDefault();
+   }
+
    return (
       <Fragment>
          <LandingNav value={true}></LandingNav>
@@ -20,7 +28,7 @@ const LogIn = () => {
                         <br />
                         <Form.Control required type="password" placeholder="Password" />
                         <br />
-                        <Button type='submit' className='d-block w-100 singInButton'>Sing In</Button>
+                        <Button onClick={signIn} type='submit' className='d-block w-100 singInButton'>Sing In</Button>
                      </div>
                      <div className="text-left singupBottom">If Your Are Not A Member Of Netflix
                         <p><Link to='/registration'> Sing Up </Link></p></div>
