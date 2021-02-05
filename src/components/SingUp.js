@@ -15,10 +15,9 @@ const SingUp = () => {
       auth.createUserWithEmailAndPassword(
          emailRef.current.value,
          passwordRef.current.value,
-         nameRef.current.value,
-         conPassWord.current.value,
       ).then((authUser) => {
          console.log(authUser);
+
       }).catch((error) => {
          alert(error.message)
       })
@@ -35,7 +34,7 @@ const SingUp = () => {
                         <h2 className='text-left form-header'>Sing In</h2>
                         <Form.Control ref={nameRef} type="text" placeholder="Full Name" />
                         <br />
-                        <Form.Control ref={emailRef} type="text" placeholder="Email Address" />
+                        <Form.Control ref={emailRef} type="email" placeholder="Email Address" />
                         <br />
                         <Form.Control ref={passwordRef} type="password" placeholder="Password" />
                         <br />

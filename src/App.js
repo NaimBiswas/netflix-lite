@@ -20,7 +20,7 @@ function App() {
    useEffect(() => {
       const unsubscribe = auth.onAuthStateChanged(userAuth => {
          if (userAuth) {
-
+            const user = true;
          } else {
 
          }
