@@ -2,16 +2,16 @@ import { Button, Form } from 'react-bootstrap'
 import React, { Fragment, useState } from 'react'
 import '../componentsCSS/LandingPageBanner.css'
 import { Link } from 'react-router-dom'
-const LandingPageBanner = (value) => {
+const LandingPageBanner = ({ value }) => {
 
-   const [singIn, setSingIn] = useState(false)
+   const [singIn, setSingIn] = useState(value)
 
 
 
    return (
       <Fragment>
          {
-            !value.false ? ([
+            singIn ? ([
                <div style={{ zIndex: '10' }} className="middle_content">
                   <div className="col-lg-6 offset-lg-3">
                      <Form.Group>
@@ -28,7 +28,7 @@ const LandingPageBanner = (value) => {
                   </div>
                </div>
             ]) : ([
-               <div className="middle_content">
+               <div style={{ zIndex: '9999999999999' }} className="middle_content">
                   <h2>
                      Unlimited movies, TV shows, and more
                    </h2>
@@ -41,7 +41,7 @@ const LandingPageBanner = (value) => {
                   </div>
                      <div className="search_bar">
                         <input type="text" placeholder='Email Address' />
-                        <Button onClick={() => setSingIn(true)} className='Get_started'><Link className='nav-link text-white' to='/login'> GET STARTED </Link></Button>
+                        <Button onClick={() => setSingIn(value)} className='Get_started'><Link className='nav-link text-white' to='/login'> GET STARTED </Link></Button>
                      </div>
                   </div>
                </div>

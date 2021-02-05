@@ -6,7 +6,8 @@ import { Link, Route } from 'react-router-dom'
 import LogIn from './LogIn'
 
 
-const LandingNav = (value) => {
+const LandingNav = ({ value }) => {
+   const [LogIn, setLogIn] = useState(value)
    return (
       <Fragment>
          <div className="container_nav">
@@ -17,14 +18,13 @@ const LandingNav = (value) => {
                <Nav className="mr-auto">
                </Nav>
                {
-                  !value.ture ? ([
+                  LogIn ? ([
 
                   ]) : (
-                        <Button className='Landing_button'><Link className='nav-link text-white signInLInk' to='/login'>Sing In </Link></Button>
+                        <Link className='nav-link text-white signInLInk' to='/login'>
+                           <Button onClick={() => setLogIn(value)} className='Landing_button'>Sing In </Button></Link>
                      )
                }
-
-
             </Navbar>
 
          </div>
