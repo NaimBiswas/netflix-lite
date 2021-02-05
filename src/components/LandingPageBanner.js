@@ -1,5 +1,5 @@
 import { Button, Form } from 'react-bootstrap'
-import React, { Fragment, useState } from 'react'
+import React, { Fragment } from 'react'
 import '../componentsCSS/LandingPageBanner.css'
 import { Link } from 'react-router-dom'
 const LandingPageBanner = ({ value }) => {

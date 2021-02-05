@@ -1,17 +1,25 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useRef } from 'react'
 import { Button, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
+import { auth } from '../firebase';
 import LandingNav from './LandingNav'
 
 
 const LogIn = () => {
-   const register = e => {
+   const emailRef = useRef(null)
+   const passwordRef = useRef(null)
 
-   }
 
    const signIn = (Event) => {
-
       Event.preventDefault();
+      auth.signInWithEmailAndPassword(
+         emailRef.current.value,
+         passwordRef.current.value,
+      ).then(() => {
+
+      }).catch((error) => {
+         alert(error.message);
+      })
    }
 
    return (
@@ -24,9 +32,9 @@ const LogIn = () => {
 
                      <div className="form_from">
                         <h2 className='text-left form-header'>Sing In</h2>
-                        <Form.Control required='true' type="email" placeholder="Email Address" />
+                        <Form.Control ref={emailRef} required type="email" placeholder="Email Address" />
                         <br />
-                        <Form.Control required type="password" placeholder="Password" />
+                        <Form.Control ref={passwordRef} required type="password" placeholder="Password" />
                         <br />
                         <Button onClick={signIn} type='submit' className='d-block w-100 singInButton'>Sing In</Button>
                      </div>

@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import { Fragment, useEffect } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home';
@@ -13,9 +13,21 @@ import LandingPageBanner from './components/LandingPageBanner';
 import LandingPage from './components/LandingPage';
 import LogIn from './components/LogIn';
 import SingUp from './components/SingUp';
+import { auth } from './firebase';
 
 function App() {
    const user = false;
+   useEffect(() => {
+      const unsubscribe = auth.onAuthStateChanged(userAuth => {
+         if (userAuth) {
+
+         } else {
+
+         }
+      })
+      return unsubscribe();
+
+   }, [])
    return (
       <Fragment>
          <div className="App">

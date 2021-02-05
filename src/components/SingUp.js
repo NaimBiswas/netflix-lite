@@ -1,10 +1,28 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import LandingNav from './LandingNav'
 import LandingPageBanner from './LandingPageBanner'
 import '../componentsCSS/LandingPageBanner.css'
 import { Button, Form } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import { auth } from '../firebase'
 const SingUp = () => {
+   const emailRef = useRef(null)
+   const passwordRef = useRef(null)
+   const nameRef = useRef(null)
+   const conPassWord = useRef(null)
+   const regiter = e => {
+      e.preventDefault();
+      auth.createUserWithEmailAndPassword(
+         emailRef.current.value,
+         passwordRef.current.value,
+         nameRef.current.value,
+         conPassWord.current.value,
+      ).then((authUser) => {
+         console.log(authUser);
+      }).catch((error) => {
+         alert(error.message)
+      })
+   }
    return (
       <div>
          <LandingNav></LandingNav>
@@ -15,16 +33,16 @@ const SingUp = () => {
 
                      <div className="form_from">
                         <h2 className='text-left form-header'>Sing In</h2>
-                        <Form.Control type="text" placeholder="Full Name" />
+                        <Form.Control ref={nameRef} type="text" placeholder="Full Name" />
                         <br />
-                        <Form.Control type="text" placeholder="Email Address" />
+                        <Form.Control ref={emailRef} type="text" placeholder="Email Address" />
                         <br />
-                        <Form.Control type="password" placeholder="Password" />
+                        <Form.Control ref={passwordRef} type="password" placeholder="Password" />
                         <br />
-                        <Form.Control type="password" placeholder="Confirm Password" />
+                        <Form.Control ref={conPassWord} type="password" placeholder="Confirm Password" />
                         <br />
 
-                        <Button className='d-block w-100 singInButton'>Sing Up</Button>
+                        <Button onClick={regiter} className='d-block w-100 singInButton'>Sing Up</Button>
                      </div>
                      <div className="text-left singupBottom">If Your Are Not A Member Of Netflix
 
