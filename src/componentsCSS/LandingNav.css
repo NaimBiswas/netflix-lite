@@ -1,6 +1,15 @@
 .container_nav{
        padding: 0 30px;
+       padding-top: 10px;
 }
 img.Logo_header {
     width: 160px;
+}
+button.Landing_button.btn.btn-primary {
+    background: red;
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 600;
+    font-size: 17px;
 }

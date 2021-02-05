@@ -10,9 +10,8 @@ const LandingNav = () => {
                <Navbar.Brand href="#home"><img className='Logo_header' src={Logo} alt="" /></Navbar.Brand>
                <Nav className="mr-auto">
                </Nav>
-               <Button>Sing In</Button>
+               <Button className='Landing_button'>Sing In</Button>
             </Navbar>
-
          </div>
 
       </Fragment>
