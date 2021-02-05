@@ -1,0 +1,30 @@
+section{
+   background-color: black;
+}
+.second_section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    color: #fff;
+}
+.second_section h2{
+  font-size: 48px;
+    font-weight: 700;
+}
+.our-story-card-img{
+   position: relative;
+   width: 100%;
+   z-index: 999;
+   
+}
+.our-story-card-video{
+    position: absolute;
+    top: 55px;
+    left: 74px;
+    content: "";
+    margin: auto;
+   
+    max-height: 238px;
+    overflow: hidden;
+    max-width: 69%;
+    margin-top: 14px;
+}
