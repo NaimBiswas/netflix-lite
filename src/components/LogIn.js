@@ -11,20 +11,22 @@ const LogIn = () => {
          <LandingNav value={true}></LandingNav>
          <div style={{ zIndex: '10' }} className="middle_content">
             <div className="col-lg-6 offset-lg-3">
-               <Form.Group>
+               <form action="">
+                  <Form.Group>
 
-                  <div className="form_from">
-                     <h2 className='text-left form-header'>Sing In</h2>
-                     <Form.Control type="text" placeholder="Email Address" />
-                     <br />
-                     <Form.Control type="password" placeholder="Password" />
-                     <br />
-                     <Button className='d-block w-100 singInButton'>Sing In</Button>
-                  </div>
-                  <div className="text-left singupBottom">If Your Are Not A Member Of Netflix
-
+                     <div className="form_from">
+                        <h2 className='text-left form-header'>Sing In</h2>
+                        <Form.Control required='true' type="email" placeholder="Email Address" />
+                        <br />
+                        <Form.Control required type="password" placeholder="Password" />
+                        <br />
+                        <Button type='submit' className='d-block w-100 singInButton'>Sing In</Button>
+                     </div>
+                     <div className="text-left singupBottom">If Your Are Not A Member Of Netflix
                         <p><Link to='/registration'> Sing Up </Link></p></div>
-               </Form.Group>
+                  </Form.Group>
+               </form>
+
             </div>
          </div>
          <div style={{

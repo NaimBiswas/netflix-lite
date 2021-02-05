@@ -40,7 +40,6 @@ button.Get_started {
         background: #f40612db;
     border: none;
     margin-bottom: 4px;
-    
     padding-bottom: 3px;
     padding-left: 35px;
     padding-right: 34px;
@@ -49,6 +48,12 @@ button.Get_started {
 }
 button.Get_started:hover{
    background-color: red;
+}
+.singInButton:focus {
+    color: #fff;
+    background-color: #e21111;
+    border-color: #000000;
+    box-shadow: 0 0 0 0.2rem rgb(0 0 0 / 17%);
 }
 .form-group {
   

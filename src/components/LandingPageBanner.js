@@ -24,7 +24,7 @@ const LandingPageBanner = ({ value }) => {
                   </div>
                <div className="search_bar">
                   <input type="text" placeholder='Email Address' />
-                  <Button onClick={() => setSingIn(value)} className='Get_started'><Link className='nav-link text-white' to='/login'> GET STARTED </Link></Button>
+                  <Button className='Get_started'><Link className='nav-link text-white' to='/login'> GET STARTED </Link></Button>
                </div>
             </div>
          </div>
