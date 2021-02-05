@@ -9,7 +9,6 @@ const LogIn = () => {
          <LandingNav value={true}></LandingNav>
          <LandingPageBanner value={true}></LandingPageBanner>
 
-         <h3 className='text-white'>This is login Scream</h3>
       </Fragment>
    )
 }

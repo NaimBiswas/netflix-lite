@@ -50,3 +50,36 @@ button.Get_started {
 button.Get_started:hover{
    background-color: red;
 }
+.form-group {
+    margin-bottom: 1rem;
+    background: #0000009c;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-radius: 10px;
+}
+h2.text-left.form-header {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 43px;
+}
+.form-control {
+
+    color: #ffffff;
+    background-color: #4444443d;
+   
+}
+.form-control:focus {
+    color: #ececec;
+    background-color: #0a0a0a;
+    border-color: #dc1111;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(191 25 102 / 25%);
+}
+.singInButton {
+    font-size: 21px;
+    font-weight: 600;
+    background: #d61b1b;
+    border: none;
+    margin-top: 20px;
+}
