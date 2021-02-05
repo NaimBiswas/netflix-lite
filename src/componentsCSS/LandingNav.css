@@ -1,6 +1,8 @@
 .container_nav{
        padding: 0 30px;
        padding-top: 10px;
+       position:absolute;
+       width: 100%;
 }
 img.Logo_header {
     width: 160px;

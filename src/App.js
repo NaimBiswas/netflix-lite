@@ -9,12 +9,14 @@ import RecentlryAdded from './components/RecentlyAdded';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import MyList from './components/MyList';
 import LandingNav from './components/LandingNav';
+import LandingPageBanner from './components/LandingPageBanner';
 
 function App() {
    return (
       <Fragment>
          <div className="App">
             <LandingNav></LandingNav>
+            <LandingPageBanner></LandingPageBanner>
             {/* <Router>
                <Route exact path='/' component={Home} ></Route>
                <Route path='/movies' component={Movies}></Route>
