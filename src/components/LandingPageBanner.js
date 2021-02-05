@@ -25,7 +25,7 @@ const LandingPageBanner = () => {
                   Watch anywhere. Cancel anytime.
             </h3>
                <div className="seacrc_section">
-                  <div className="seacrch-contect">
+                  <div className="mt-4 seacrch-contect">
                      Ready to watch? Enter your email to create or restart your membership.
                </div>
                   <div className="search_bar">

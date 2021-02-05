@@ -1,14 +1,22 @@
 section{
    background-color: black;
+   padding-bottom: 70px;
+   padding-top: 70px;
 }
 .second_section{
     padding-top: 70px;
-    padding-bottom: 70px;
     color: #fff;
 }
 .second_section h2{
   font-size: 48px;
     font-weight: 700;
+}
+.second_section p{
+  font-size: 27px;
+    font-weight: 500;
+    width: 83%;
+    padding-top: 9px;
+    color: #ffffffe3;
 }
 .our-story-card-img{
    position: relative;
