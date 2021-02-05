@@ -5,6 +5,11 @@
        width: 100%;
        z-index: 9999;
 }
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #cc007a;
+    border-color: #005cbf;
+}
 img.Logo_header {
     width: 160px;
 }
@@ -14,5 +19,5 @@ button.Landing_button.btn.btn-primary {
     padding-left: 15px;
     padding-right: 15px;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 16px;
 }

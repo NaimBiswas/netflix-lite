@@ -26,7 +26,7 @@ const NavMenu = () => {
                <Navbar.Toggle aria-controls="basic-navbar-nav" />
                <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="mr-auto">
-                     <Nav.Link className=' nav-color' ><Link className='nav-link nav-color' to='/'>Home</Link> </Nav.Link>
+                     <Nav.Link className=' nav-color' ><Link className='nav-link nav-color' to='/home'>Home</Link> </Nav.Link>
                      <Nav.Link className='nav-color' ><Link className='nav-link nav-color' to='/tv-shows'>Tv Shows</Link></Nav.Link>
                      <Nav.Link className=' nav-color' ><Link className='nav-link nav-color' to='/movies'>Movies</Link></Nav.Link>
                      <Nav.Link className='nav-color' ><Link className='nav-link nav-color' to='/recently-added'>Recently Added</Link></Nav.Link>
