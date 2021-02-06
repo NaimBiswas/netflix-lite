@@ -21,7 +21,7 @@ const Profile = () => {
                      </thead>
                      <tbody>
                         <tr >
-                           <td rowSpan='3' style={{ width: '16%' }} className='pt-0'>
+                           <td rowSpan='6' style={{ width: '16%' }} className='pt-0'>
                               <img className='img-fluid img-thumbnail w-100% ' src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="" />
                            </td>
                            <td style={{ verticalAlign: 'middle' }} className='bg-info'>
@@ -30,8 +30,36 @@ const Profile = () => {
 
                         </tr>
                         <tr>
-                           <td className='h3 text-white'>Plans  {"Current Plant: Premium "} </td>
+                           <td className='h3 text-white'>Plans <small> {"Current Plant: Premium "} </small></td>
                         </tr>
+                        <tr>
+                           <td style={{ justifyContent: "space-between" }} className='text-white d-flex'>
+                              <p>
+                                 Neflix <strong> Strander</strong><br /><span>.05/month</span>
+                              </p>
+                              <p><button className='btn btn-danger btn-md mt-3'>Subscribe</button></p>
+                           </td>
+
+                        </tr>
+                        <tr>
+                           <td style={{ justifyContent: "space-between" }} className='text-white d-flex'>
+                              <p>
+                                 Neflix <strong> Strander</strong><br /><span>.05/month</span>
+                              </p>
+                              <p><button className='btn btn-danger btn-md mt-3'>Subscribe</button></p>
+                           </td>
+
+                        </tr>
+                        <tr>
+                           <td style={{ justifyContent: "space-between" }} className='text-white d-flex'>
+                              <p>
+                                 Neflix <strong> Strander</strong><br /><span>.05/month</span>
+                              </p>
+                              <p><button className='btn btn-danger btn-md mt-3'>Subscribe</button></p>
+                           </td>
+
+                        </tr>
+
 
                         <tr>
                            <td><Button style={{ border: 'none' }} className='bg-danger w-100 d-block pt-2 pb-2'>Sing Out</Button></td>
