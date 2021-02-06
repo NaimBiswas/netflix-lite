@@ -1,15 +1,15 @@
 import React, { Fragment, useRef } from 'react'
 import { Button, Form } from 'react-bootstrap';
-import { Link, } from 'react-router-dom';
+import { Link, useHistory, } from 'react-router-dom';
 import { auth } from '../firebase';
-import Home from './Home';
+
 import LandingNav from './LandingNav'
 
 
 const LogIn = () => {
    const emailRef = useRef(null)
    const passwordRef = useRef(null)
-
+   const history = useHistory();
 
    const signIn = (Event) => {
       Event.preventDefault();
@@ -18,6 +18,7 @@ const LogIn = () => {
          passwordRef.current.value,
       ).then(() => {
          alert('Login Success')
+         history.push('/home')
       }).catch((error) => {
          alert(error.message);
       })
@@ -37,7 +38,7 @@ const LogIn = () => {
                         <br />
                         <Form.Control ref={passwordRef} required type="password" placeholder="Password" />
                         <br />
-                        <Button onClick={signIn} type='submit' className='d-block w-100 singInButton'><Link to='/home' className='text-white nav-link'>Sing In</Link></Button>
+                        <Button onClick={signIn} type='submit' className='d-block w-100 singInButton'>test</Button>
                      </div>
                      <div className="text-left singupBottom">If Your Are Not A Member Of Netflix
                         <p><Link to='/registration'> Sing Up </Link></p></div>

@@ -11,8 +11,8 @@ import MyList from './components/MyList';
 import LandingPage from './components/LandingPage';
 import LogIn from './components/LogIn';
 import SingUp from './components/SingUp';
-import { auth } from './firebase';
-import { login, logout } from './userSlice';
+
+
 
 
 function App() {
