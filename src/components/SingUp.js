@@ -3,21 +3,23 @@ import LandingNav from './LandingNav'
 import LandingPageBanner from './LandingPageBanner'
 import '../componentsCSS/LandingPageBanner.css'
 import { Button, Form } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { auth } from '../firebase'
 const SingUp = () => {
    const emailRef = useRef(null)
    const passwordRef = useRef(null)
    const nameRef = useRef(null)
    const conPassWord = useRef(null)
+   const history = useHistory()
    const regiter = e => {
       e.preventDefault();
       auth.createUserWithEmailAndPassword(
          emailRef.current.value,
          passwordRef.current.value,
-      ).then((authUser) => {
-         console.log(authUser);
+      ).then(() => {
 
+         alert('Register Success ! Log In For Home');
+         history.push('/login')
       }).catch((error) => {
          alert(error.message)
       })

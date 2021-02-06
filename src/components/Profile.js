@@ -21,7 +21,7 @@ const Profile = () => {
             position: 'relative'
          }}>
          </div>
-         <div style={{ position: "absolute", top: '18%', right: '0' }} className="container">
+         <div style={{ position: "absolute", top: '18%', right: '0%' }} className="container">
             <div className="row">
                <div className="col-lg-6 offset-lg-2">
                   <table className='table'>
@@ -73,7 +73,7 @@ const Profile = () => {
 
 
                         <tr>
-                           <td><Button style={{ border: 'none' }} className='bg-danger w-100 d-block pt-2 pb-2'>Sing Out</Button></td>
+                           <td><Button onClick={logOut} style={{ border: 'none' }} className='bg-danger w-100 d-block pt-2 pb-2'>Sing Out</Button></td>
                         </tr>
 
                      </tbody>
