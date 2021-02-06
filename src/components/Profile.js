@@ -15,6 +15,8 @@ const Profile = () => {
       alert('Are You Sure For Sign Out')
       history.push('/')
    }
+
+
    return (
       <div>
          <Nav></Nav>
@@ -42,7 +44,7 @@ const Profile = () => {
                               <img className='img-fluid img-thumbnail w-100% ' src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="" />
                            </td>
                            <td style={{ verticalAlign: 'middle' }} className='bg-info text-white h6'>
-                              nayeembiswas3@gmail.com
+                              nayeembiswas2@gmail.com
                            </td>
 
                         </tr>
@@ -70,7 +72,7 @@ const Profile = () => {
                         <tr>
                            <td style={{ justifyContent: "space-between" }} className='text-white d-flex'>
                               <p>
-                                 Neflix <strong> Strander</strong><br /><span style={{ color: 'rgb(255 255 255 / 82%)' }}>$15/month</span>
+                                 Neflix <strong> Premium</strong><br /><span style={{ color: 'rgb(255 255 255 / 82%)' }}>$15/month</span>
                               </p>
                               <p><button className='btn btn-secondary btn-md mt-3'>Subscribe</button></p>
                            </td>
