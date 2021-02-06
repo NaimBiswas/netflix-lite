@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react'
-import { Navbar, Nav, } from 'react-bootstrap'
+import { Navbar, Nav, Dropdown, NavLink, NavItem, } from 'react-bootstrap'
 import Logo from '../Logo.svg'
 import '../componentsCSS/Nav.css'
 import { Link } from 'react-router-dom'
@@ -33,10 +33,24 @@ const NavMenu = () => {
                      <Nav.Link className='nav-color' ><Link className='nav-link nav-color' to='/my-list'>My List</Link></Nav.Link>
                   </Nav>
                   <Nav>
+
                      <Nav.Link className='nav-color'> KID</Nav.Link>
                      <Nav.Link className='nav-color pr-4'> DVD</Nav.Link>
-                     <img className='right-avatar' src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="" />
+                     <Dropdown as={NavItem}>
+                        <Dropdown.Toggle className='' as={NavLink}>
+                           <img className='right-avatar' src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="" />
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu className='showName'>
+                           <Dropdown.Item >
+                              <Nav.Link className='nav-link-hover'>Profile</Nav.Link>
+                              <Nav.Link className='nav-link-hover'>Register</Nav.Link>
+                              <Nav.Link className='nav-link-hover'>Upgrade Services</Nav.Link>
+                           </Dropdown.Item>
+                        </Dropdown.Menu>
+                     </Dropdown>;
+
                   </Nav>
+
                </Navbar.Collapse>
             </Navbar>
          </div>
