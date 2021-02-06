@@ -42,9 +42,9 @@ const NavMenu = () => {
                         </Dropdown.Toggle>
                         <Dropdown.Menu className='showName'>
                            <Dropdown.Item >
-                              <Nav.Link className='nav-link-hover'>Profile</Nav.Link>
-                              <Nav.Link className='nav-link-hover'>Register</Nav.Link>
-                              <Nav.Link className='nav-link-hover'>Upgrade Services</Nav.Link>
+                              <Link to='/profile' className='nav-link'> <Nav className='nav-link-hover nav-link '>Profile</Nav></Link>
+                              <Link to='/registration' className='nav-link'> <Nav className='nav-link-hover nav-link '>Register</Nav></Link>
+                              <Link to='/services' className='nav-link'> <Nav className='nav-link-hover nav-link '>Upgrade Services</Nav></Link>
                            </Dropdown.Item>
                         </Dropdown.Menu>
                      </Dropdown>;
