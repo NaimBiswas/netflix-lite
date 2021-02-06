@@ -38,7 +38,7 @@ const LogIn = () => {
                         <br />
                         <Form.Control ref={passwordRef} required type="password" placeholder="Password" />
                         <br />
-                        <Button onClick={signIn} type='submit' className='d-block w-100 singInButton'>test</Button>
+                        <Button onClick={signIn} type='submit' className='d-block w-100 singInButton'>Sing In</Button>
                      </div>
                      <div className="text-left singupBottom">If Your Are Not A Member Of Netflix
                         <p><Link to='/registration'> Sing Up </Link></p></div>
