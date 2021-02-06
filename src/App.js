@@ -11,6 +11,8 @@ import MyList from './components/MyList';
 import LandingPage from './components/LandingPage';
 import LogIn from './components/LogIn';
 import SingUp from './components/SingUp';
+import RecentlyAdded from './components/RecentlyAdded';
+import Profile from './components/Profile';
 
 
 
@@ -24,17 +26,16 @@ function App() {
          <div className="App">
 
             <Router>
-
-
                <Route exact path='/' component={LandingPage} >
                </Route>
                <Route path='/login' component={LogIn}></Route>
                <Route path='/registration' component={SingUp}></Route>
                <Route exact path='/home' component={Home} ></Route>
                <Route path='/movies' component={Movies}></Route>
-               <Route path='/tv-shows' component={TvShows}></Route>
+               <Route path='/recently-added' component={RecentlyAdded}></Route>
                <Route path='/tv-shows' component={TvShows}></Route>
                <Route path='/my-list' component={MyList}></Route>
+               <Route path='/profile' component={Profile}></Route>
 
             </Router>
          </div>
