@@ -33,7 +33,8 @@ function App() {
                <Route exact path='/home' component={Home} ></Route>
                <Route path='/movies' component={Movies}></Route>
                <Route path='/tv-shows' component={TvShows}></Route>
-               <Route path='/recently-added' component={RecentlryAdded}></Route>
+               <Route path='/tv-shows' component={TvShows}></Route>
+               <Route path='/my-list' component={MyList}></Route>
 
             </Router>
          </div>
