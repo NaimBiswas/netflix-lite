@@ -24,7 +24,7 @@ const Profile = () => {
                            <td rowSpan='6' style={{ width: '16%' }} className='pt-0'>
                               <img className='img-fluid img-thumbnail w-100% ' src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="" />
                            </td>
-                           <td style={{ verticalAlign: 'middle' }} className='bg-info'>
+                           <td style={{ verticalAlign: 'middle' }} className='bg-info text-white h6'>
                               nayeembiswas3@gmail.com
                            </td>
 
@@ -35,7 +35,7 @@ const Profile = () => {
                         <tr>
                            <td style={{ justifyContent: "space-between" }} className='text-white d-flex'>
                               <p>
-                                 Neflix <strong> Strander</strong><br /><span>.05/month</span>
+                                 Neflix <strong> Strander</strong><br /><span style={{ color: 'rgb(255 255 255 / 82%)' }}>$.75/month</span>
                               </p>
                               <p><button className='btn btn-danger btn-md mt-3'>Subscribe</button></p>
                            </td>
@@ -44,7 +44,7 @@ const Profile = () => {
                         <tr>
                            <td style={{ justifyContent: "space-between" }} className='text-white d-flex'>
                               <p>
-                                 Neflix <strong> Strander</strong><br /><span>.05/month</span>
+                                 Neflix <strong> Basic</strong><br /><span style={{ color: 'rgb(255 255 255 / 82%)' }}>$7.5/month</span>
                               </p>
                               <p><button className='btn btn-danger btn-md mt-3'>Subscribe</button></p>
                            </td>
@@ -53,9 +53,9 @@ const Profile = () => {
                         <tr>
                            <td style={{ justifyContent: "space-between" }} className='text-white d-flex'>
                               <p>
-                                 Neflix <strong> Strander</strong><br /><span>.05/month</span>
+                                 Neflix <strong> Strander</strong><br /><span style={{ color: 'rgb(255 255 255 / 82%)' }}>$15/month</span>
                               </p>
-                              <p><button className='btn btn-danger btn-md mt-3'>Subscribe</button></p>
+                              <p><button className='btn btn-secondary btn-md mt-3'>Subscribe</button></p>
                            </td>
 
                         </tr>
