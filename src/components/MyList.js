@@ -9,7 +9,7 @@ const MyList = () => {
          <div className="">
             <h2 className='text-danger' style={{ textAlign: 'center', position: 'absolute', width: '100%', top: '50%', }}>This Page Will Come Soon</h2>
          </div>
-         <div style={{ position: 'absolute', bottom: '0', width: '100%' }} className="">
+         <div style={{ paddingTop: '75vh' }} className="">
             <Footer></Footer>
          </div>
       </div>
