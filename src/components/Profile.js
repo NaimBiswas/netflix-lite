@@ -4,16 +4,18 @@ import React from 'react'
 import { Button } from 'react-bootstrap'
 import { auth } from '../firebase'
 import Nav from './Nav'
+import '../componentsCSS/Profile.css'
 
 
 const Profile = () => {
+
    return (
       <div>
          <Nav></Nav>
          <div style={{ paddingTop: '150px' }} className="container">
             <div className="row">
                <div className="col-lg-6 offset-lg-2">
-                  <table className='table table-bordered'>
+                  <table className='table'>
                      <thead>
                         <tr>
                            <td colspan='2' className="text-white h4">Edit Profile</td>
