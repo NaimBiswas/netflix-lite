@@ -5,10 +5,16 @@ import { Button } from 'react-bootstrap'
 import { auth } from '../firebase'
 import Nav from './Nav'
 import '../componentsCSS/Profile.css'
+import { useHistory } from 'react-router-dom'
 
 
 const Profile = () => {
-
+   const history = useHistory()
+   const logOut = e => {
+      e.preventDefault();
+      alert('Are You Sure For Sign Out')
+      history.push('/')
+   }
    return (
       <div>
          <Nav></Nav>
@@ -73,7 +79,7 @@ const Profile = () => {
 
 
                         <tr>
-                           <td><Button onClick={logOut} style={{ border: 'none' }} className='bg-danger w-100 d-block pt-2 pb-2'>Sing Out</Button></td>
+                           <td><Button onClick={logOut} style={{ border: 'none' }} className='bg-danger w-100 d-block pt-2 pb-2'>Sign Out</Button></td>
                         </tr>
 
                      </tbody>

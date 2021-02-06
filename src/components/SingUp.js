@@ -33,7 +33,7 @@ const SingUp = () => {
                   <Form.Group>
 
                      <div className="form_from">
-                        <h2 className='text-left form-header'>Sing In</h2>
+                        <h2 className='text-left form-header'>Sign In</h2>
                         <Form.Control ref={nameRef} type="text" placeholder="Full Name" />
                         <br />
                         <Form.Control ref={emailRef} type="email" placeholder="Email Address" />
